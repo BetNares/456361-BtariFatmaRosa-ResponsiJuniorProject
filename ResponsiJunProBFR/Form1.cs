@@ -66,5 +66,15 @@ namespace ResponsiJunProBFR
         {
             //tidak jadi dipakai
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dgvData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //tbID.Text = r.Cells["_id_karyawan"].Value.ToString();
+        }
     }
 }
