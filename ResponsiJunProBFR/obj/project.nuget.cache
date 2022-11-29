@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jpitCu4ROI46h8Sm0S/GDR/8gYdK1wamNa2SdWutVEpwaanazlQkCCoKKENb4Ls1sHqaxOzT8LwDsvFBxTRRbg==",
+  "dgSpecHash": "unrnqAeeN385icARZ6LmaMlors4/Q6fDacp6RKjraBMXBTwAk5yax2nKlkdhWpF+QEYq5mEB5umutxoh3n+1sw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Btari Fatma R\\source\\repos\\ResponsiJunProBFR\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Btari Fatma R\\Documents\\GitHub\\456361-BtariFatmaRosa-ResponsiJuniorProject\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Btari Fatma R\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Btari Fatma R\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
+    "C:\\Users\\Btari Fatma R\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

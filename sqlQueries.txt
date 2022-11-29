@@ -1,0 +1,3 @@
+create table departemen (id_dep int, nama_dep varchar(30))
+create table karyawan (id_karyawan char(6), nama varchar(30), id_dep int)
+insert into karyawan (id_karyawan, nama, id_dep) values (0001, 'Napoleon', 1); 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Btari Fatma R\\source\\repos\\ResponsiJunProBFR\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj": {}
+    "C:\\Users\\Btari Fatma R\\Documents\\GitHub\\456361-BtariFatmaRosa-ResponsiJuniorProject\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Btari Fatma R\\source\\repos\\ResponsiJunProBFR\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj": {
+    "C:\\Users\\Btari Fatma R\\Documents\\GitHub\\456361-BtariFatmaRosa-ResponsiJuniorProject\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Btari Fatma R\\source\\repos\\ResponsiJunProBFR\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj",
+        "projectUniqueName": "C:\\Users\\Btari Fatma R\\Documents\\GitHub\\456361-BtariFatmaRosa-ResponsiJuniorProject\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj",
         "projectName": "ResponsiJunProBFR",
-        "projectPath": "C:\\Users\\Btari Fatma R\\source\\repos\\ResponsiJunProBFR\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj",
+        "projectPath": "C:\\Users\\Btari Fatma R\\Documents\\GitHub\\456361-BtariFatmaRosa-ResponsiJuniorProject\\ResponsiJunProBFR\\ResponsiJunProBFR.csproj",
         "packagesPath": "C:\\Users\\Btari Fatma R\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Btari Fatma R\\source\\repos\\ResponsiJunProBFR\\ResponsiJunProBFR\\obj\\",
+        "outputPath": "C:\\Users\\Btari Fatma R\\Documents\\GitHub\\456361-BtariFatmaRosa-ResponsiJuniorProject\\ResponsiJunProBFR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Btari Fatma R\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
