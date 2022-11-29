@@ -112,6 +112,7 @@
             this.dgvData.RowTemplate.Height = 25;
             this.dgvData.Size = new System.Drawing.Size(707, 231);
             this.dgvData.TabIndex = 7;
+            this.dgvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellClick);
             // 
             // richTextBox1
             // 
