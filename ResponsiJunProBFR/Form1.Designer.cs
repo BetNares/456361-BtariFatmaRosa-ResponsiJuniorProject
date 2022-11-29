@@ -37,13 +37,16 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbID = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 65);
+            this.label1.Location = new System.Drawing.Point(52, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 15);
             this.label1.TabIndex = 0;
@@ -52,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 107);
+            this.label2.Location = new System.Drawing.Point(52, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 15);
             this.label2.TabIndex = 1;
@@ -60,14 +63,14 @@
             // 
             // tbNamaKaryawan
             // 
-            this.tbNamaKaryawan.Location = new System.Drawing.Point(194, 64);
+            this.tbNamaKaryawan.Location = new System.Drawing.Point(194, 65);
             this.tbNamaKaryawan.Name = "tbNamaKaryawan";
             this.tbNamaKaryawan.Size = new System.Drawing.Size(130, 23);
             this.tbNamaKaryawan.TabIndex = 2;
             // 
             // tbDepKaryawan
             // 
-            this.tbDepKaryawan.Location = new System.Drawing.Point(194, 104);
+            this.tbDepKaryawan.Location = new System.Drawing.Point(194, 103);
             this.tbDepKaryawan.Name = "tbDepKaryawan";
             this.tbDepKaryawan.Size = new System.Drawing.Size(130, 23);
             this.tbDepKaryawan.TabIndex = 3;
@@ -80,6 +83,7 @@
             this.btnInsert.TabIndex = 4;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnEdit
             // 
@@ -117,11 +121,40 @@
             this.richTextBox1.Text = "ID Departemen HR: HR, ENG: Engineer, DEV : Developer, PM: Product M, FIN: Finance" +
     "";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(52, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "ID_karyawan";
+            // 
+            // tbID
+            // 
+            this.tbID.Location = new System.Drawing.Point(194, 27);
+            this.tbID.Name = "tbID";
+            this.tbID.Size = new System.Drawing.Size(130, 23);
+            this.tbID.TabIndex = 10;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(638, 437);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 11;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 476);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.tbID);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnDelete);
@@ -151,5 +184,8 @@
         private Button btnDelete;
         private DataGridView dgvData;
         private RichTextBox richTextBox1;
+        private Label label3;
+        private TextBox tbID;
+        private Button btnRefresh;
     }
 }

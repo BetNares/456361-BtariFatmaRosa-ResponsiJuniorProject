@@ -1,5 +1,6 @@
 using Npgsql;
 using System.Data;
+using System.Reflection;
 
 namespace ResponsiJunProBFR
 {
@@ -32,6 +33,38 @@ namespace ResponsiJunProBFR
             dt.Load(rd);
             dgvData.DataSource = dt;
             conn.Close();
+        }
+
+
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try {
+                conn = new NpgsqlConnection(connstring);
+                conn.Open();
+                sql = "insert into karyawan (id_karyawan, nama, id_dep) values (" + tbID.Text + ",'" + tbNamaKaryawan.Text + "'," + tbDepKaryawan.Text + ")";
+                cmd = new NpgsqlCommand(sql, conn);
+                //cmd.Parameters.AddWithValue("_id_karyawan", tbID.Text);
+                //cmd.Parameters.AddWithValue("_nama", tbNamaKaryawan.Text);
+                //cmd.Parameters.AddWithValue("_id_dep", tbDepKaryawan.Text);
+                dt = new DataTable();
+                NpgsqlDataReader rd = cmd.ExecuteReader();
+                dt.Load(rd);
+                dgvData.DataSource = dt;
+                MessageBox.Show(sql);
+                conn.Close();
+            } catch
+            {
+                //lupa cara show exception 
+            }
+            
+        }
+
+
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //tidak jadi dipakai
         }
     }
 }
